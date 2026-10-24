@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Obsidian plugins for writing, with installation instructions, requirements, source, and downloads.">
+  <meta name="color-scheme" content="light dark">
+  <title>Obsidian Tools</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#tools">Skip to tools</a>
+<main>
+  <header>
+    <h1>Obsidian Tools</h1>
+    <p>Plugins for Obsidian. Install each separately.</p>
+    <p>Requirements and installation methods differ by plugin. Download links below point to published releases.</p>
+  </header>
+  <section id="installation" aria-labelledby="installation-title">
+    <h2 id="installation-title">Install an Obsidian plugin</h2>
+    <p>Open <strong>Settings → Community plugins</strong> and, if prompted, choose <strong>Turn on community plugins</strong> to leave Restricted mode.</p>
+    <p>For plugins in Obsidian’s community directory, open <strong>Settings → Community plugins → Browse</strong>, find the plugin, then install and enable it. Composition Mode is listed there.</p>
+    <p>For Pocket Codex, follow the manual steps below. Paragraph Numbers and Composition Mode use the same process with their three files and folder names listed under each plugin:</p>
+    <ol>
+      <li>Open Pocket Codex’s release page and download all four files: <code>main.js</code>, <code>manifest.json</code>, <code>styles.css</code>, and <code>pocket-codexd.cjs</code>. Download the release assets rather than GitHub’s source-code archive.</li>
+      <li>In your vault, create <code>.obsidian/plugins/pocket-codex/</code>. The <code>.obsidian</code> folder may be hidden in your file manager.</li>
+      <li>Put the downloaded files directly in that folder. Restart Obsidian, open <strong>Settings → Community plugins</strong>, and enable the plugin.</li>
+      <li>Complete the plugin’s setup below.</li>
+    </ol>
+    <p><a href="https://help.obsidian.md/community-plugins">Obsidian’s community plugin guide</a></p>
+  </section>
+  <section id="tools" aria-label="Tools">
+    <article aria-labelledby="pocket-title">
+      <h2 id="pocket-title">Pocket Codex</h2>
+      <p>Use Claude Code, Codex, or Grok in an Obsidian sidebar, with conversations, file context, edits, and provider tools. Built on Claudian and maintained independently.</p>
+      <p class="requirements">Requires Obsidian 1.7.2 or later. Install and sign in to the command-line program for your chosen provider, then configure its location in Pocket Codex settings. Pocket Codex is not currently in Obsidian’s community directory.</p>
+      <p class="requirements">Download <code>main.js</code>, <code>manifest.json</code>, <code>styles.css</code>, and <code>pocket-codexd.cjs</code> from the release below. Place all four files in <code>.obsidian/plugins/pocket-codex/</code>, restart Obsidian, and enable <strong>Pocket Codex</strong>. Open it from the ribbon or command palette and choose a provider.</p>
+      <p class="requirements">Optional iPhone and iPad remote access requires additional setup on a Mac and Tailscale on both devices. Follow the mobile setup instructions. If you used Claudian Praetor, follow the migration guide and disable the old plugin before enabling Pocket Codex.</p>
+      <p class="links"><a href="https://github.com/kvarnelis/pocket-codex/releases/tag/2026.8.14">Download release 2026.8.14</a><a href="https://github.com/kvarnelis/pocket-codex#install">Setup instructions</a><a href="https://github.com/kvarnelis/pocket-codex/blob/praetor/MIGRATION.md">Migration guide</a><a href="https://github.com/kvarnelis/pocket-codex">Source code</a><a href="https://github.com/YishenTu/claudian">Claudian credits</a></p>
+    </article>
+    <article aria-labelledby="composition-title">
+      <h2 id="composition-title">Composition Mode</h2>
+      <p>Write in a paper-style editor with page sizes, margins, type controls, zoom, and page breaks.</p>
+      <p class="requirements">Requires Obsidian 1.5.0 or later on desktop. Install through <strong>Settings → Community plugins → Browse</strong> and search for <strong>Composition Mode</strong>, or download <code>main.js</code>, <code>manifest.json</code>, and <code>styles.css</code> from its release and put those three files in <code>.obsidian/plugins/composition-mode/</code>.</p>
+      <p class="requirements">Run <strong>Composition Mode: Toggle</strong> from the command palette. The bottom control bar adjusts the layout. Pagination is an editor aid rather than a print typesetter; the plugin is experimental and has mainly been tested with the Minimal theme.</p>
+      <p class="links"><a href="https://github.com/kvarnelis/composition-mode/releases/tag/1.2.5">Download release 1.2.5</a><a href="https://github.com/kvarnelis/composition-mode#use">Setup instructions</a><a href="https://github.com/kvarnelis/composition-mode">Source code</a></p>
+    </article>
+    <article aria-labelledby="paragraph-title">
+      <h2 id="paragraph-title">Paragraph Numbers</h2>
+      <p>Show paragraph numbers in the editor gutter for referring to passages in long-form prose.</p>
+      <p class="requirements">Requires Obsidian 1.0.0 or later; its manifest supports desktop and mobile. Download <code>main.js</code>, <code>manifest.json</code>, and <code>styles.css</code> from the release below and put those three files in <code>.obsidian/plugins/paragraph-numbers/</code>. Restart Obsidian and enable <strong>Paragraph Numbers</strong> under Community plugins. It is not currently listed in Obsidian’s community directory.</p>
+      <p class="requirements">Turn off Obsidian’s built-in line numbers under <strong>Settings → Editor</strong>.</p>
+      <p class="links"><a href="https://github.com/kvarnelis/obsidian-paragraph-numbers/releases/tag/1.0.0">Download release 1.0.0</a><a href="https://github.com/kvarnelis/obsidian-paragraph-numbers#installation">Setup instructions</a><a href="https://github.com/kvarnelis/obsidian-paragraph-numbers">Source code</a></p>
+    </article>
+  </section>
+</main>
+<footer><a href="https://kvarnelis.github.io/zotero-tools/">Zotero Tools</a> · <a href="https://github.com/kvarnelis/obsidian-tools">Page source</a><p>These projects are not affiliated with Obsidian.</p></footer>
+</body>
+</html>
